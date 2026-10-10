@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade & Termos de Uso — Agenda de Pioneiros</title>
+  <meta name="description" content="Política de Privacidade, Termos de Uso e Política de Proteção de Crianças e Adolescentes do aplicativo Agenda de Pioneiros (WR CODE). Em conformidade com a LGPD e o ECA Digital.">
+  <meta name="theme-color" content="#831843">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-cream: #FAF7F5;
+      --card-bg: #FFFFFF;
+      --bordo: #831843;
+      --bordo-dark: #500724;
+      --rose: #BE185D;
+      --rose-light: #FCE7F3;
+      --rose-soft: #FDF2F8;
+      --gold: #D4AF37;
+      --gold-light: #E9D5AA;
+      --ink: #1F2937;
+      --ink-muted: #6B7280;
+      --border-color: #F3E8E2;
+      --emerald-bg: #ECFDF5;
+      --emerald-text: #065F46;
+      --emerald-border: #A7F3D0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, #500724 0%, #831843 60%, #9D174D 100%);
+      color: #FFFFFF;
+      padding: 48px 20px 40px;
+      text-align: center;
+      position: relative;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .brand-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 16px;
+      background: #FFFFFF;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      border: 2px solid var(--gold-light);
+    }
+
+    .app-icon svg {
+      width: 40px;
+      height: 40px;
+      fill: var(--bordo);
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--gold-light);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .meta-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .badge-pill {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .nav-tabs-wrapper {
+      position: sticky;
+      top: 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-color);
+      z-index: 50;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .nav-tabs {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      overflow-x: auto;
+      padding: 6px 16px;
+      gap: 8px;
+    }
+
+    .tab-btn {
+      padding: 10px 18px;
+      border-radius: 12px;
+      border: none;
+      background: transparent;
+      color: var(--ink-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      background: var(--rose-soft);
+      color: var(--bordo);
+    }
+
+    .tab-btn.active {
+      background: var(--bordo);
+      color: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(131, 24, 67, 0.25);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 32px auto 60px;
+      padding: 0 20px;
+    }
+
+    .legal-card {
+      background: var(--card-bg);
+      border-radius: 24px;
+      border: 1px solid var(--border-color);
+      padding: 36px 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      margin-bottom: 28px;
+    }
+
+    .doc-section {
+      display: none;
+    }
+
+    .doc-section.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card-header {
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-header h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--bordo);
+      margin-bottom: 8px;
+    }
+
+    .card-header p {
+      color: var(--ink-muted);
+      font-size: 0.88rem;
+    }
+
+    .info-box {
+      background: var(--emerald-bg);
+      border: 1px solid var(--emerald-border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 28px;
+      color: var(--emerald-text);
+      font-size: 0.88rem;
+    }
+
+    .info-box strong {
+      display: block;
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+    }
+
+    .article-item {
+      margin-bottom: 24px;
+    }
+
+    .article-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--bordo-dark);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge-sub {
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: var(--rose-soft);
+      color: var(--rose);
+      border: 1px solid var(--rose-light);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .article-content {
+      color: #374151;
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+
+    .article-content p {
+      margin-bottom: 10px;
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, #FAF7F5 0%, #FDF2F8 100%);
+      border: 1px solid var(--rose-light);
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    .contact-card h3 {
+      font-family: 'Cinzel', serif;
+      color: var(--bordo);
+      margin-bottom: 6px;
+    }
+
+    .contact-card p {
+      color: var(--ink-muted);
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    .contact-link {
+      display: inline-block;
+      background: var(--bordo);
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .contact-link:hover {
+      background: var(--bordo-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--ink-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+      background: #FFFFFF;
+    }
+
+    footer strong {
+      color: var(--bordo);
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 36px 16px 30px; }
+      h1 { font-size: 1.6rem; }
+      .legal-card { padding: 24px 18px; border-radius: 18px; }
+      .card-header h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="brand-container">
+      <div class="app-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-4.5-4.5 1.4-1.4 3.1 3.1 6.1-6.1 1.4 1.4L12 17z"/>
+        </svg>
+      </div>
+      <h1>Agenda de Pioneiros</h1>
+      <p class="subtitle">Documentação Jurídica, Privacidade & Termos de Uso</p>
+      
+      <div class="meta-badges">
+        <span class="badge-pill">🛡️ Versão 2.0.0 Oficial</span>
+        <span class="badge-pill">⚖️ LGPD (Art. 11 e 14)</span>
+        <span class="badge-pill">👶 ECA Digital (Lei nº 15.211/2025)</span>
+        <span class="badge-pill">📅 Atualizado em 03/10/2026</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABAS DE NAVEGAÇÃO -->
+  <div class="nav-tabs-wrapper">
+    <div class="nav-tabs" role="tablist">
+      <button class="tab-btn active" onclick="switchTab('privacidade', this)" role="tab" aria-selected="true">
+        🔒 Política de Privacidade
+      </button>
+      <button class="tab-btn" onclick="switchTab('termos', this)" role="tab" aria-selected="false">
+        📜 Termos de Uso
+      </button>
+      <button class="tab-btn" onclick="switchTab('criancas', this)" role="tab" aria-selected="false">
+        👶 Proteção de Menores (ECA)
+      </button>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <div class="legal-card">
+
+      <!-- ========================================================= -->
+      <!-- SEÇÃO 1: POLÍTICA DE PRIVACIDADE                          -->
+      <!-- ========================================================= -->
+      <section id="privacidade" class="doc-section active" role="tabpanel">
+        <div class="card-header">
+          <h2>Política de Privacidade e Proteção de Dados Pessoais</h2>
+          <p>Versão 2.0.0 • Vigência: 03 de outubro de 2026 • Responsável: William de Assis (WR CODE)</p>
+        </div>
+
+        <div class="info-box">
+          <strong>✓ Transparência e Minimização Total</strong>
+          A Agenda de Pioneiros foi desenvolvida com foco total em privacidade. Não vendemos dados pessoais, não exibimos anúncios comportamentais e tratamos exclusivamente o estritamente necessário para suas anotações pessoais teocráticas.
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>1. Objetivo e Legislação de Regência</span>
+            <span class="badge-sub">LGPD & ECA</span>
+          </div>
+          <div class="article-content">
+            <p>Esta Política de Privacidade explica, de forma clara e transparente, como a Agenda de Pioneiros trata dados pessoais de seus usuários.</p>
+            <p>O tratamento observará, conforme aplicável, a Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (LGPD), a Lei nº 12.965/2014 — Marco Civil da Internet, o Estatuto da Criança e do Adolescente (Lei nº 8.069/1990), a Lei nº 15.211/2025 — Estatuto Digital da Criança e do Adolescente (ECA Digital), seus regulamentos e demais normas aplicáveis.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>2. Responsável pelo Tratamento</span>
+            <span class="badge-sub">Controlador</span>
+          </div>
+          <div class="article-content">
+            <p>Para as atividades de tratamento relacionadas à operação da Agenda de Pioneiros, o responsável pelo aplicativo é:</p>
+            <p><strong>William de Assis</strong> • Desenvolvedor Independente (WR CODE)<br>
+            Canal oficial de suporte e privacidade: <strong>wr.code.suporte@gmail.com</strong></p>
+            <p>O aplicativo disponibiliza canal direto e dedicado para o exercício dos direitos dos titulares previstos no Artigo 18 da LGPD.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>3. Dados Coletados e Tratados</span>
+            <span class="badge-sub">Mínimo Necessário</span>
+          </div>
+          <div class="article-content">
+            <p><strong>3.1. Dados de Cadastro e Autenticação:</strong> nome ou nome de exibição, endereço de e-mail, avatar escolhido, modalidade de serviço (ex: pioneira regular, auxiliar), congregação e grupo de campo (opcionais). A autenticação segura é realizada com auxílio do serviço Firebase Authentication.</p>
+            <p><strong>3.2. Dados de Atividade e Ministério:</strong> registros de horas, cronômetro de atividade, metas mensais e anuais, publicações, vídeos, revisitas, estudos bíblicos e anotações pessoais. Tais informações são armazenadas no Cloud Firestore sob criptografia para viabilizar a sincronização segura da sua conta.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>4. Dados Sensíveis (Convicção Religiosa - Art. 11 LGPD)</span>
+            <span class="badge-sub">Consentimento Destacado</span>
+          </div>
+          <div class="article-content">
+            <p>A LGPD considera dados referentes à convicção religiosa como dados pessoais sensíveis.</p>
+            <p>Determinadas anotações inseridas voluntariamente pelo usuário (como registros de horas dedicadas à pregação e anotações teocráticas) podem revelar convicções de fé. Por essa razão, o aplicativo colhe consentimento específico e destacado da usuária em tela própria, nunca presumindo o aceite pela simples instalação do app.</p>
+            <p>O usuário pode revogar esse consentimento a qualquer momento diretamente nos Ajustes do aplicativo.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>5. Princípio da Não Comercialização</span>
+            <span class="badge-sub">Sem Venda de Dados</span>
+          </div>
+          <div class="article-content">
+            <p>A Agenda de Pioneiros <strong>NÃO vende, NÃO aluga e NÃO licencia</strong> dados pessoais dos usuários. Nenhuma informação é utilizada para publicidade comercial, traçado de perfil comportamental ou venda de listas de contatos.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>6. Armazenamento e Infraestrutura em Nuvem (Firebase / Google)</span>
+            <span class="badge-sub">Segurança Máxima</span>
+          </div>
+          <div class="article-content">
+            <p>O aplicativo utiliza serviços de infraestrutura em nuvem do Google Firebase:</p>
+            <p>• <strong>Firebase Authentication:</strong> processamento seguro de credenciais em centros de dados certificados nos EUA sob o padrão internacional de segurança do Google.<br>
+            • <strong>Cloud Firestore:</strong> banco de dados em nuvem global de alta disponibilidade com criptografia de ponta a ponta em repouso e em trânsito (HTTPS/TLS).</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>7. Exclusão Imediata da Conta e dos Dados (Self-Service)</span>
+            <span class="badge-sub">Autonomia LGPD</span>
+          </div>
+          <div class="article-content">
+            <p>O usuário possui controle total sobre suas informações. A exclusão de todos os dados e o encerramento da conta podem ser realizados pelo próprio usuário a qualquer momento, sem necessidade de aguardar atendimento manual:</p>
+            <p>👉 <em>Ajustes > Privacidade (LGPD) > Excluir Minha Conta e Todos os Meus Dados</em></p>
+            <p>A confirmação exclui permanentemente o cadastro no Firebase Authentication e todos os registros e relatórios vinculados no Cloud Firestore.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- SEÇÃO 2: TERMOS DE USO                                    -->
+      <!-- ========================================================= -->
+      <section id="termos" class="doc-section" role="tabpanel">
+        <div class="card-header">
+          <h2>Termos de Uso</h2>
+          <p>Versão 2.0.0 • Vigência: 03 de outubro de 2026 • Desenvolvedor: William de Assis</p>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>1. Aceitação dos Termos</span>
+            <span class="badge-sub">Acordo</span>
+          </div>
+          <div class="article-content">
+            <p>Ao criar uma conta ou utilizar a Agenda de Pioneiros, você concorda com os presentes Termos de Uso. Este aplicativo foi desenvolvido como uma ferramenta pessoal de organização e planejamento espiritual sem fins lucrativos ou exploração comercial de dados.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>2. Uso Adequado e Responsabilidade do Usuário</span>
+            <span class="badge-sub">Conduta</span>
+          </div>
+          <div class="article-content">
+            <p>O usuário é responsável pela veracidade das informações inseridas e pela guarda segura de suas credenciais de acesso.</p>
+            <p>É estritamente vedada a utilização do aplicativo para finalidades ilícitas, tentativa de invasão a contas de terceiros, engenharia reversa ou sobrecarga maliciosa dos servidores.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>3. Registro de Revisitas e Dados de Terceiros</span>
+            <span class="badge-sub">LGPD Art. 6º</span>
+          </div>
+          <div class="article-content">
+            <p>Ao anotar informações a respeito de pessoas interessadas ou revisitas, o usuário atua como responsável pelas anotações que insere e compromete-se a registrar apenas o mínimo necessário para a organização pessoal do seu ministério.</p>
+            <p>Recomenda-se expressamente <strong>NÃO inserir documentos pessoais, dados bancários, prontuários de saúde ou informações sensíveis de terceiros</strong> nas anotações de campo.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>4. Propriedade Intelectual</span>
+            <span class="badge-sub">WR CODE</span>
+          </div>
+          <div class="article-content">
+            <p>A estrutura de código, design visual, marcas, elementos gráficos e recursos da Agenda de Pioneiros são de titularidade do desenvolvedor William de Assis (WR CODE), protegidos pelas leis de propriedade intelectual e direitos autorais.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- SEÇÃO 3: PROTEÇÃO DE CRIANÇAS E ADOLESCENTES              -->
+      <!-- ========================================================= -->
+      <section id="criancas" class="doc-section" role="tabpanel">
+        <div class="card-header">
+          <h2>Política de Proteção de Crianças e Adolescentes</h2>
+          <p>Versão 1.0.0 • Estatuto Digital da Criança e do Adolescente (Lei nº 15.211/2025 & Art. 14 LGPD)</p>
+        </div>
+
+        <div class="info-box">
+          <strong>👶 Proteção Prioritária e Integral</strong>
+          A Agenda de Pioneiros não possui salas de bate-papo públicas, não conecta menores com pessoas estranhas, não exibe jogos, propagandas ou compras impulsivas e requer autorização dos responsáveis legais para menores de 18 anos.
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>1. Ambiente Protegido e Livre de Riscos</span>
+            <span class="badge-sub">Segurança</span>
+          </div>
+          <div class="article-content">
+            <p>A Agenda de Pioneiros é uma ferramenta estritamente focada em organização espiritual. O aplicativo <strong>NÃO contém e NÃO permite:</strong></p>
+            <p>a) Conteúdos impróprios, adultos ou sensíveis;<br>
+            b) Recursos de apostas, jogos ou compras por impulso;<br>
+            c) Redes sociais públicas ou contato com pessoas desconhecidas;<br>
+            d) Publicidade comercial ou compartilhamento de dados com anunciantes.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>2. Autorização Parental e Co-Presença</span>
+            <span class="badge-sub">Art. 14 LGPD</span>
+          </div>
+          <div class="article-content">
+            <p>Para jovens e pioneiros menores de 18 anos, o aplicativo estabelece fluxo de autorização parental em co-presença no primeiro acesso, colhendo o consentimento consciente do responsável legal para a utilização da conta.</p>
+            <p>Para menores de 12 anos, o consentimento do pai, mãe ou responsável legal é mandatório nos termos expressos do Artigo 14, § 1º da Lei nº 13.709/2018.</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>3. Minimização de Dados</span>
+            <span class="badge-sub">Sem Documentos Excessivos</span>
+          </div>
+          <div class="article-content">
+            <p>Em total respeito à privacidade infantil, o aplicativo <strong>NÃO exige e NÃO faz upload de fotos de documentos civis (RG, CPF ou certidões)</strong> de menores de idade, adotando mecanismos de validação proporcionais e não invasivos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD DE CONTATO / SUPORTE -->
+      <div class="contact-card">
+        <h3>Dúvidas sobre Privacidade ou Dados Pessoais?</h3>
+        <p>Nossa equipe está à disposição para atender solicitações, pedidos de esclarecimento ou exclusão de dados.</p>
+        <a href="mailto:wr.code.suporte@gmail.com" class="contact-link">
+          ✉️ Falar com Suporte: wr.code.suporte@gmail.com
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2026 <strong>Agenda de Pioneiros</strong> • Desenvolvido por <strong>William de Assis (WR CODE)</strong></p>
+    <p style="margin-top: 6px; font-size: 0.78rem;">Todos os direitos reservados • Protegido pela legislação brasileira de proteção de dados.</p>
+  </footer>
+
+  <script>
+    function switchTab(sectionId, btnElement) {
+      // Oculta todas as seções
+      const sections = document.querySelectorAll('.doc-section');
+      sections.forEach(s => s.classList.remove('active'));
+
+      // Desativa todos os botões
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+
+      // Ativa a seção clicada
+      const target = document.getElementById(sectionId);
+      if (target) {
+        target.classList.add('active');
+      }
+
+      // Ativa o botão clicado
+      btnElement.classList.add('active');
+      btnElement.setAttribute('aria-selected', 'true');
+
+      // Rola suavemente para o início do conteúdo
+      window.scrollTo({ top: 180, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
