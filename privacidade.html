@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidade & Termos de Uso — Agenda da Pioneira</title>
-  <meta name="description" content="Política de Privacidade, Termos de Uso e Política de Proteção de Crianças e Adolescentes do aplicativo Agenda da Pioneira (WR CODE). Em conformidade com a LGPD e o ECA Digital.">
+  <meta name="description" content="Política de Privacidade, Termos de Uso e Política de Proteção de Crianças e Adolescentes do aplicativo Agenda da Pioneira (WR CODE). Em conformidade com a LGPD, CDC e o ECA Digital.">
   <meta name="theme-color" content="#831843">
   <link rel="icon" type="image/png" href="app_icon.png">
   <link rel="apple-touch-icon" href="app_icon.png">
@@ -28,6 +28,9 @@
       --emerald-bg: #ECFDF5;
       --emerald-text: #065F46;
       --emerald-border: #A7F3D0;
+      --warn-bg: #FFFBEB;
+      --warn-text: #78350F;
+      --warn-border: #FDE68A;
     }
 
     * {
@@ -218,6 +221,22 @@
       margin-bottom: 4px;
     }
 
+    .deletion-box {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-top: 24px;
+      color: var(--warn-text);
+      font-size: 0.88rem;
+    }
+
+    .deletion-box strong.title {
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
     .article-item {
       margin-bottom: 24px;
     }
@@ -323,12 +342,12 @@
       </div>
       <h1>Agenda da Pioneira</h1>
       <p class="subtitle">Documentação Jurídica, Privacidade & Termos de Uso</p>
-      
+
       <div class="meta-badges">
-        <span class="badge-pill">🛡️ Versão 2.0.0 Oficial</span>
-        <span class="badge-pill">⚖️ LGPD (Art. 11 e 14)</span>
+        <span class="badge-pill">🛡️ Versão 2.1.0 Oficial</span>
+        <span class="badge-pill">⚖️ LGPD (Art. 11, 14 e 18)</span>
         <span class="badge-pill">👶 ECA Digital (Lei nº 15.211/2025)</span>
-        <span class="badge-pill">📅 Atualizado em 03/10/2026</span>
+        <span class="badge-pill">📅 Atualizado em 24/11/2026</span>
       </div>
     </div>
   </header>
@@ -358,7 +377,7 @@
       <section id="privacidade" class="doc-section active" role="tabpanel">
         <div class="card-header">
           <h2>Política de Privacidade e Proteção de Dados Pessoais</h2>
-          <p>Versão 2.0.0 • Vigência: 03 de outubro de 2026 • Responsável: William de Assis (WR CODE)</p>
+          <p>Versão 2.1.0 • Vigência: 24 de novembro de 2026 • Responsável: William de Assis (WR CODE)</p>
         </div>
 
         <div class="info-box">
@@ -369,11 +388,11 @@
         <div class="article-item">
           <div class="article-title">
             <span>1. Objetivo e Legislação de Regência</span>
-            <span class="badge-sub">LGPD & ECA</span>
+            <span class="badge-sub">LGPD & ECA Digital</span>
           </div>
           <div class="article-content">
             <p>Esta Política de Privacidade explica, de forma clara e transparente, como a Agenda da Pioneira trata dados pessoais de seus usuários.</p>
-            <p>O tratamento observará, conforme aplicável, a Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (LGPD), a Lei nº 12.965/2014 — Marco Civil da Internet, o Estatuto da Criança e do Adolescente (Lei nº 8.069/1990), a Lei nº 15.211/2025 — Estatuto Digital da Criança e do Adolescente (ECA Digital), seus regulamentos e demais normas aplicáveis.</p>
+            <p>O tratamento observará, conforme aplicável, a Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (LGPD), a Lei nº 12.965/2014 — Marco Civil da Internet, o Código de Defesa do Consumidor (Lei nº 8.078/1990), o Estatuto da Criança e do Adolescente (Lei nº 8.069/1990), a Lei nº 15.211/2025 — Estatuto Digital da Criança e do Adolescente (ECA Digital), e as Resoluções da ANPD.</p>
           </div>
         </div>
 
@@ -393,11 +412,15 @@
         <div class="article-item">
           <div class="article-title">
             <span>3. Dados Coletados e Tratados</span>
-            <span class="badge-sub">Mínimo Necessário</span>
+            <span class="badge-sub">Transparência Total</span>
           </div>
           <div class="article-content">
-            <p><strong>3.1. Dados de Cadastro e Autenticação:</strong> nome ou nome de exibição, endereço de e-mail, avatar escolhido, modalidade de serviço (ex: pioneira regular, auxiliar), congregação e grupo de campo (opcionais). A autenticação segura é realizada com auxílio do serviço Firebase Authentication.</p>
-            <p><strong>3.2. Dados de Atividade e Ministério:</strong> registros de horas, cronômetro de atividade, metas mensais e anuais, publicações, vídeos, revisitas, estudos bíblicos e anotações pessoais. Tais informações são armazenadas no Cloud Firestore sob criptografia para viabilizar a sincronização segura da sua conta.</p>
+            <p><strong>3.1. Dados de Cadastro e Autenticação:</strong> nome ou nome de exibição, endereço de e-mail, identificadores técnicos da conta, avatar escolhido, modalidade de serviço, congregação e grupo de campo (opcionais), mediante Firebase Authentication.</p>
+            <p><strong>3.2. Dados de Atividade, Ministério e Família:</strong> registros de horas, cronômetro de atividade, metas mensais e anuais, publicações, vídeos, revisitas, estudos bíblicos, anotações pessoais e registros opcionais de membros da família armazenados no Cloud Firestore.</p>
+            <p><strong>3.3. Assinaturas e Transações (Google Play Billing):</strong> plano contratado, status da degustação/assinatura, vigência e identificadores técnicos da transação (orderId e purchaseToken). Não coletamos nem armazenamos dados de cartão de crédito ou bancários.</p>
+            <p><strong>3.4. Localização e Mapas (Opcional):</strong> caso você autorize o GPS ou pesquise um endereço no módulo de revisitas, coordenadas geográficas ou o texto pesquisado são consultados sob demanda via OpenStreetMap / Nominatim para marcação no mapa.</p>
+            <p><strong>3.5. Suporte por E-mail e Autorização Parental:</strong> solicitações enviadas voluntariamente via Caixa de Solicitação ou e-mail para <strong>wr.code.suporte@gmail.com</strong> tratam apenas o e-mail de resposta, título e mensagem da usuária; e, para menores de 18 anos, nome, e-mail e grau de parentesco do responsável legal.</p>
+            <p><strong>3.6. Diagnóstico e Métricas Técnicas (Firebase Analytics):</strong> eventos técnicos de estabilidade e uso agregados no Android exclusivamente para prevenção de falhas e melhoria de desempenho, sem publicidade comportamental.</p>
           </div>
         </div>
 
@@ -425,26 +448,32 @@
 
         <div class="article-item">
           <div class="article-title">
-            <span>6. Armazenamento e Infraestrutura em Nuvem (Firebase / Google)</span>
-            <span class="badge-sub">Segurança Máxima</span>
+            <span>6. Infraestrutura, Transferência Internacional e Segurança</span>
+            <span class="badge-sub">ANPD Res. 15 e 19/2024</span>
           </div>
           <div class="article-content">
             <p>O aplicativo utiliza serviços de infraestrutura em nuvem do Google Firebase:</p>
             <p>• <strong>Firebase Authentication:</strong> processamento seguro de credenciais em centros de dados certificados nos EUA sob o padrão internacional de segurança do Google.<br>
-            • <strong>Cloud Firestore:</strong> banco de dados em nuvem global de alta disponibilidade com criptografia de ponta a ponta em repouso e em trânsito (HTTPS/TLS).</p>
+            • <strong>Cloud Firestore:</strong> banco de dados em nuvem global com criptografia em trânsito (HTTPS/TLS) e criptografia em repouso (AES-256) gerenciada pela infraestrutura Google Cloud, além de regras de isolamento estrito entre contas e opção de backup local criptografado AES-256.</p>
+            <p>As transferências internacionais necessárias ao funcionamento do Firebase seguem a LGPD e a Resolução CD/ANPD nº 19/2024. Eventuais incidentes de segurança seguem os protocolos da Resolução CD/ANPD nº 15/2024.</p>
           </div>
         </div>
 
         <div class="article-item">
           <div class="article-title">
-            <span>7. Exclusão Imediata da Conta e dos Dados (Self-Service)</span>
+            <span>7. Exclusão Imediata da Conta e dos Dados (Self-Service & Web)</span>
             <span class="badge-sub">Autonomia LGPD</span>
           </div>
           <div class="article-content">
-            <p>O usuário possui controle total sobre suas informações. A exclusão de todos os dados e o encerramento da conta podem ser realizados pelo próprio usuário a qualquer momento, sem necessidade de aguardar atendimento manual:</p>
-            <p>👉 <em>Ajustes > Privacidade (LGPD) > Excluir Minha Conta e Todos os Meus Dados</em></p>
-            <p>A confirmação exclui permanentemente o cadastro no Firebase Authentication e todos os registros e relatórios vinculados no Cloud Firestore.</p>
+            <p>O usuário possui controle total sobre suas informações. A exclusão de todos os dados e o encerramento da conta podem ser realizados pelo próprio usuário a qualquer momento:</p>
+            <p>👉 <strong>Pelo aplicativo:</strong> <em>Ajustes &gt; Privacidade (LGPD) &gt; Excluir Minha Conta e Todos os Meus Dados</em> (confirmando com a palavra "EXCLUIR").</p>
+            <p>A confirmação exclui permanentemente o cadastro no Firebase Authentication e todos os registros vinculados na base ativa do Cloud Firestore (horas, revisitas, tarefas, metas, família, assinatura, consentimentos, fichas compartilhadas e eventuais registros legados).</p>
           </div>
+        </div>
+
+        <div class="deletion-box" id="exclusao-conta">
+          <strong class="title">🗑️ Já desinstalou o app e quer excluir sua conta? (Solicitação via Web/E-mail)</strong>
+          Se você não possui mais o aplicativo instalado no celular, pode solicitar a eliminação definitiva da sua conta e de todos os dados vinculados enviando um e-mail para <a href="mailto:wr.code.suporte@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta%20-%20Agenda%20da%20Pioneira"><strong>wr.code.suporte@gmail.com</strong></a> com o assunto <em>"Exclusão de Conta"</em>, informando o endereço de e-mail cadastrado. Após a validação de titularidade, todos os dados da base ativa serão eliminados em caráter definitivo.
         </div>
       </section>
 
@@ -454,7 +483,7 @@
       <section id="termos" class="doc-section" role="tabpanel">
         <div class="card-header">
           <h2>Termos de Uso</h2>
-          <p>Versão 2.0.0 • Vigência: 03 de outubro de 2026 • Desenvolvedor: William de Assis</p>
+          <p>Versão 2.1.0 • Vigência: 24 de novembro de 2026 • Desenvolvedor: William de Assis (WR CODE)</p>
         </div>
 
         <div class="article-item">
@@ -463,13 +492,24 @@
             <span class="badge-sub">Acordo</span>
           </div>
           <div class="article-content">
-            <p>Ao criar uma conta ou utilizar a Agenda da Pioneira, você concorda com os presentes Termos de Uso. Este aplicativo foi desenvolvido como uma ferramenta pessoal de organização e planejamento espiritual sem fins lucrativos ou exploração comercial de dados.</p>
+            <p>Ao criar uma conta ou utilizar a Agenda da Pioneira, você concorda com os presentes Termos de Uso, com a Política de Privacidade e com a Política de Proteção de Crianças e Adolescentes. Este aplicativo foi desenvolvido como uma ferramenta pessoal de organização e planejamento espiritual sem exploração comercial ou venda de dados de usuários.</p>
           </div>
         </div>
 
         <div class="article-item">
           <div class="article-title">
-            <span>2. Uso Adequado e Responsabilidade do Usuário</span>
+            <span>2. Planos, Assinaturas, Degustação e Cancelamento (Google Play)</span>
+            <span class="badge-sub">Google Play & CDC</span>
+          </div>
+          <div class="article-content">
+            <p>A Agenda da Pioneira oferece <strong>7 (sete) dias corridos de degustação gratuita</strong> a partir do primeiro acesso. Após esse período, a continuidade da criação e edição de registros requer assinatura ativa (Plano Mensal ou Plano Anual), exibida e cobrada exclusivamente por meio da <strong>Google Play Store (Google Play Billing)</strong>.</p>
+            <p>As assinaturas são renovadas automaticamente ao final de cada ciclo, podendo ser canceladas a qualquer momento nas configurações de Assinaturas da Google Play Store. Em caso de cancelamento, o acesso permanece ativo até o término do período já pago. Pedidos de reembolso seguem as políticas da Google Play Store e o Código de Defesa do Consumidor (Lei nº 8.078/1990).</p>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <div class="article-title">
+            <span>3. Uso Adequado e Responsabilidade do Usuário</span>
             <span class="badge-sub">Conduta</span>
           </div>
           <div class="article-content">
@@ -480,22 +520,23 @@
 
         <div class="article-item">
           <div class="article-title">
-            <span>3. Registro de Revisitas e Dados de Terceiros</span>
+            <span>4. Registro de Revisitas e Dados de Terceiros</span>
             <span class="badge-sub">LGPD Art. 6º</span>
           </div>
           <div class="article-content">
-            <p>Ao anotar informações a respeito de pessoas interessadas ou revisitas, o usuário atua como responsável pelas anotações que insere e compromete-se a registrar apenas o mínimo necessário para a organização pessoal do seu ministério.</p>
-            <p>Recomenda-se expressamente <strong>NÃO inserir documentos pessoais, dados bancários, prontuários de saúde ou informações sensíveis de terceiros</strong> nas anotações de campo.</p>
+            <p>Ao anotar informações a respeito de pessoas interessadas ou revisitas, o usuário atua como responsável pelas anotações que insere e compromete-se a registrar apenas o estritamente necessário para a organização pessoal do seu ministério.</p>
+            <p>Recomenda-se expressamente <strong>NÃO inserir documentos pessoais, dados bancários, prontuários de saúde ou informações sensíveis excessivas de terceiros</strong> nas anotações de campo.</p>
           </div>
         </div>
 
         <div class="article-item">
           <div class="article-title">
-            <span>4. Propriedade Intelectual</span>
-            <span class="badge-sub">WR CODE</span>
+            <span>5. Propriedade Intelectual e Foro</span>
+            <span class="badge-sub">WR CODE • Brasil</span>
           </div>
           <div class="article-content">
             <p>A estrutura de código, design visual, marcas, elementos gráficos e recursos da Agenda da Pioneira são de titularidade do desenvolvedor William de Assis (WR CODE), protegidos pelas leis de propriedade intelectual e direitos autorais.</p>
+            <p>Estes Termos são regidos pelas leis brasileiras, eleito o Foro da Comarca de Pitangueiras, Estado de São Paulo, ressalvadas as normas de proteção ao consumidor aplicáveis.</p>
           </div>
         </div>
       </section>
@@ -570,28 +611,23 @@
 
   <script>
     function switchTab(sectionId, btnElement) {
-      // Oculta todas as seções
       const sections = document.querySelectorAll('.doc-section');
       sections.forEach(s => s.classList.remove('active'));
 
-      // Desativa todos os botões
       const buttons = document.querySelectorAll('.tab-btn');
       buttons.forEach(b => {
         b.classList.remove('active');
         b.setAttribute('aria-selected', 'false');
       });
 
-      // Ativa a seção clicada
       const target = document.getElementById(sectionId);
       if (target) {
         target.classList.add('active');
       }
 
-      // Ativa o botão clicado
       btnElement.classList.add('active');
       btnElement.setAttribute('aria-selected', 'true');
 
-      // Rola suavemente para o início do conteúdo
       window.scrollTo({ top: 180, behavior: 'smooth' });
     }
   </script>
